@@ -7,9 +7,10 @@ Grammer
 ---
 1. 문장 끝에 세미콜론을 넣지 않음.
 2. new 키워드 없이 객체 생성.
-3. 타입 추론을 지원 -> 일반적인 경우 타입을 명시하지 않아도 됨.
-    - ex) val name : String = "YongJun" 의 경우 타입 추론이 가능하므로 val name = "YongJun" 가능
-4. val : value (상수) / var : varable (변수)
+3. 타입 추론을 지원: 일반적인 경우 타입을 명시하지 않아도 됨.
+    > ex) val name : String = "YongJun" 의 경우 타입 추론이 가능하므로 val name = "YongJun" 가능
+4. | val : value (상수) | var : varable (변수) |
+   | --- | --- |
 5. 인터페이스의 인스턴스를 람다식으로 표현할 수 있다.
 
 | java | kotlin |
