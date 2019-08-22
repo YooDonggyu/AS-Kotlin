@@ -1,0 +1,44 @@
+#프로그래머스 코딩테스트 lev.1 : 짝수와 홀수
+
+Q. 정수 num이 짝수일 경우 Even을 반환하고 홀수인 경우 Odd를 반환하는 함수, solution을 완성해주세요.
+  - 제한조건
+    + num은 int 범위의 정수입니다.
+    + 0은 짝수입니다.
+
+○ Java
+	  public static String solution(int num) {
+	      String answer = "";
+	      answer = (num%2 == 0) ? "Even" : "Odd";
+	      return answer;
+	  }
+
+
+○ Kotlin
+	  class Solution {
+	      fun solution(num: Int): String = if(num%2 == 0) "Even" else "Odd"
+	  }
+
+	  
+	 //다른 사람들 답변 중 모르는거
+	  //모르겠음1
+	  class Solution {
+	      fun solution(num: Int): String = if (num and 1 == 1) "Odd" else "Even"
+	  }
+	  
+	  //모르겠음2
+	  class Solution {
+	      fun solution(num: Int): String 
+	      {
+	          return if (num.and(1) == 0) "Even" else "Odd"
+	      }
+	  }
+
+
+○ etc
+  - kotlin은 return 생략이 가능하여 코드가 간결해짐
+  - "=="는 값 비교, "==="는 객체 비교
+  - return 값이 없으면 Java와 void와 같은 : Unit을 쓰는데 이 또한 생략할 수 있다.
+  - 이해가 안가는 다른 사람들 답변을 알아보니 infix 함수
+    + 간단하게 함수에 함수를 추가할 수 있다. (아직 완전 이해는 안됨)
+    + https://tourspace.tistory.com/104
+    + https://codechacha.com/ko/kotlin-infix-functions/
